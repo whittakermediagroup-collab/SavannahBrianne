@@ -283,6 +283,8 @@
 
   .about-left {}
 
+  .about-photo { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center 40%; border-radius: 2px; }
+
   .about-photo-placeholder {
     width: 100%;
     aspect-ratio: 3/4;
@@ -791,7 +793,7 @@
     .container { padding: 0 1.5rem; }
 
     .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .about-photo-placeholder { aspect-ratio: 4/3; }
+    .about-photo { aspect-ratio: 4/3; }
 
     .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
 
@@ -846,14 +848,7 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-left fade-up">
-        <!-- REPLACE THIS BLOCK WITH: <img src="your-photo.jpg" alt="Savannah Goodall" style="width:100%;border-radius:2px;"> -->
-        <div class="about-photo-placeholder">
-          <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="18" r="9" stroke="white" stroke-width="1.5"/>
-            <path d="M6 42c0-9.941 8.059-18 18-18s18 8.059 18 18" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-          Add photo here
-        </div>
+        <img src="savannah-about.jpg" alt="Savannah Goodall" class="about-photo">
         <div class="about-stats">
           <div class="stat">
             <span class="stat-num">7+</span>
